@@ -1,0 +1,30 @@
+.nav-button{
+    display: block;
+    width: 1000px;
+    height: 50px;
+    margin: 200px;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-button form{
+    margin: 20px;
+}
+
+.button{
+    border: none;
+    border-radius: 10px;
+    background: cadetblue;
+    font-size: 20px;
+}
+
+.resA a{
+    font-size: 50px;
+}
+
+.currency_button button{
+    width: 120px;
+    height: 30px;
+    margin: 10px;
+    background: #8a8afa;
+}

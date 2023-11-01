@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/res/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<input id="num1">
+<input id="num2">
+
+<div id="btns">
+</div>
+<form method="post" action="/calc/results">
+    <button id="plus" onclick="plus()">+</button>
+    <button id="minus" onclick="minus()">-</button>
+    <button id="multi" onclick="multi()">*</button>
+    <button id="divide" onclick="divide()">/</button>
+    <input id="resCalc" name="resss" hidden>
+</form>
+<form method="get" action="/">
+    <button>Назад в меню</button>
+</form>
+
+<script>
+    function plus(){
+        var num1, num2, res;
+        num1 = Number(document.getElementById('num1').value);
+        num2 = Number(document.getElementById('num2').value);
+        res = num1 + num2;
+        document.getElementById('resCalc').value = res;
+    }
+
+    function minus(){
+        var num1, num2, res;
+        num1 = Number(document.getElementById('num1').value);
+        num2 = Number(document.getElementById('num2').value);
+        res = num1 - num2;
+        document.getElementById('resCalc').value = res;
+    }
+
+    function multi(){
+        var num1, num2, res;
+        num1 = Number(document.getElementById('num1').value);
+        num2 = Number(document.getElementById('num2').value);
+        res = num1 * num2;
+        document.getElementById('resCalc').value = res;
+    }
+
+    function divide(){
+        var num1, num2, res;
+        num1 = Number(document.getElementById('num1').value);
+        num2 = Number(document.getElementById('num2').value);
+        res = num1 / num2;
+        document.getElementById('resCalc').value = res;
+    }
+</script>
+<!--<script src="../static/res/JavaScript/script.js" th:src="@{/JavaScript/script.js}"></script>-->
+</body>
+</html>

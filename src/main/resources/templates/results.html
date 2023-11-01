@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div>-->
+<!--  <input class="resConvert" type="text" id="resConvert" th:text="${resConvert}">-->
+<!--</div>-->
+<div class="resA">
+    <a id="resCalc" th:text="${resCalc}"></a>
+</div>
+<div>
+  <form method="get" action="/">
+    <button>Назад в меню</button>
+  </form>
+    <form method="get" action="/calc">
+        <button>К калькулятору</button>
+    </form>
+    <form method="get" action="/converter">
+        <button>К конвертеру</button>
+    </form>
+</div>
+</body>
+</html>
